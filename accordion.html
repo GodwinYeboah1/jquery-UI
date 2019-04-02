@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>accordion</title>
+</head>
+<body>
+
+    <div id="accord">
+        <h2>one</h2>
+        <div><p>This is the first</p></div>
+        <h2>two</h2>
+        <div><p>This is the second</p></div>
+        <h2>three</h2>
+        <div><p>This is the three</p></div>
+        <h2>four</h2>
+        <div><p>This is the four</p></div>
+        <h2>five</h2>
+        <div><p>This is the five</p></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $('#accord').accordion();
+        });
+    </script>
+</body>
+</html>

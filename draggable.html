@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Draggable</title>
+    <style>
+    #draggable {
+        background-color: green;
+        height: 300px;
+        width: 200px;
+    }
+    .ui-widget-content.corners {
+        background-color: red;
+        height: 300px;
+        width: 200px;
+    }  
+    </style>
+     
+</head>
+<body>
+
+    <div id="draggable" class="ui-widget-content"><p>Drag me anywhere</p></div>
+    <div id="draggable " class="ui-widget-content corners"><p>Drag me around the corners</p></div>
+    <div id="draggable " class="ui-widget-content corners"><p>Drag me around the corners</p></div>
+    <div id="draggable " class="ui-widget-content corners"><p>Drag me around the corners</p></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $('#draggable').draggable();
+        $('.corners').draggable();
+    </script>
+</head>
+</body>
+</html>
